@@ -1,0 +1,107 @@
+<html>
+  <head>
+    <title>Beanboozle</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <h1>Vote for your favourite Bean!</h1>
+    <p>
+      Which Bean is the cutest? Vote now!!!! :~~~)))
+    </p>
+
+    <table>
+      <tr>
+        <td>
+          <img height="200px" src="http://tinyurl.com/mfw6uz4" alt="lol whr r u">
+        </td>
+        <td>
+          <table>
+            <tr>
+              <td>Count: <span id="beanOneCount">0</span></td>
+            </tr>
+            <tr>
+              <td>
+                <button onclick="increaseCountBean1()">BEAN 1</button>
+              </td>
+            </tr>
+          </table>
+        </td>
+        <td>
+          <img height="200px" src="http://tinyurl.com/lha3aoa" alt="lol whr r u 2">
+        </td>
+        <td>
+          <table>
+            <tr>
+              <td>Count: <span id="beanTwoCount">0</span></td>
+            </tr>
+            <tr>
+              <td>
+                <button onclick="increaseCountBean2()">BEAN 2</button>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td>
+            <img height="200px" src="http://tinyurl.com/mf4qd96" alt="lol whr r u 3">
+        </td>
+        <td>
+          <table>
+            <tr>
+              <td>Count: <span id="beanThreeCount">0</span></td>
+            </tr>
+            <tr>
+              <td>
+                <button onclick="increaseCountBean3()">BEAN 3</button>
+              </td>
+            </tr>
+          </table>
+        </td>
+        <td>
+          <img height="200px" src="http://tinyurl.com/zgx8eky" alt="lol whr r u 4">
+        </td>
+        <td>
+          <table>
+            <tr>
+              <td>Count: <span id="beanFourCount">0</span></td>
+            </tr>
+            <tr>
+              <td>
+                <button onclick="increaseCountBean4()">BEAN 4</button>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+
+  <script>
+    var bean1= 0
+    function increaseCountBean1() {
+      bean1 += 1
+      $("#beanOneCount").html(bean1)
+    }
+
+    var bean2= 0
+    function increaseCountBean2() {
+      bean2 += 1
+      $("#beanTwoCount").html(bean2)
+    }
+
+    var bean3= 0
+    function increaseCountBean3() {
+      bean3 += 1
+      $("#beanThreeCount").html(bean3)
+    }
+
+    var bean4= 0
+    function increaseCountBean4() {
+      bean4 += 1
+      $("#beanFourCount").html(bean4)
+    }
+  </script>
+  </body>
+</html>
+
+html>(head>title)+body>p

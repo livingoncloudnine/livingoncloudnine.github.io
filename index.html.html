@@ -1,0 +1,114 @@
+<html>
+  <head>
+    <title>My Booty Strap Page :~~))</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="cover.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="site-wrapper">
+
+      <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+          <div class="masthead clearfix">
+            <div class="inner">
+              <h3 class="masthead-brand">Bean's resume</h3>
+              <nav>
+                <ul class="nav masthead-nav">
+                  <li id="navHomeTab"><a href="#" onclick="gotoHome()"><i class="fa fa-home"></i> Home</a></li>
+                  <li id="navSkillsTab"><a href="#" onclick="gotoSkills()"><i class="fa fa-bolt"></i> Skills</a></li>
+                  <li id="navContactTab"><a href="#" onclick="gotoContact()"><i class="fa fa-phone"></i> Contact</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+
+          <div class="inner cover" id="home">
+            <img class="img-circle" height="200px" width="300px" src="http://tinyurl.com/lha3aoa" alt="lol whr r u 2">
+            <h1 class="cover-heading"></h1>
+            <p class="lead">Hallo I am Bean</p>
+            <p class="lead">
+              <a href="#" class="btn btn-lg btn-default">Learn more</a>
+            </p>
+          </div>
+
+          <div class="inner cover" id="skills">
+            <img height="200px" width="300px" class="img-circle" src="http://tinyurl.com/mfw6uz4" alt="lol whr r u">
+            <h1 class="cover-heading"></h1>
+            <p class="lead">I'm strong, funny, amazeballs!!!</p>
+            <p class="lead">
+              <a href="#" class="btn btn-lg btn-default">Learn more</a>
+            </p>
+          </div>
+
+          <div class="inner cover" id="contact">
+            <img height="200px" width="300px" class="img-circle" src="http://tinyurl.com/mf4qd96" alt="lol whr r u 3">
+            <h1 class="cover-heading"></h1>
+            <p class="lead">HMU 2nite!!!!!!!!!! @91234567</p>
+            <p class="lead">
+              <a href="#" class="btn btn-lg btn-default">Learn more</a>
+            </p>
+          </div>
+
+
+          <div class="mastfoot">
+            <div class="inner">
+              <p>Cover template for <a href="http://getbootstrap.com">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+
+    <script>
+      $(function() {
+        $("#skills").hide()
+        $("#contact").hide()
+      })
+
+      function gotoHome() {
+        $("#skills").hide()
+        $("#contact").hide()
+        $("#home").slideDown()
+        $("#navHomeTab").attr('class', 'active');
+        $("#navSkillsTab").attr('class', '');
+        $("#navContactTab").attr('class', '');
+      }
+
+      function gotoSkills() {
+        $("#home").hide()
+        $("#contact").hide()
+        $("#skills").slideDown()
+        $("#navHomeTab").attr('class', '');
+        $("#navSkillsTab").attr('class', 'active');
+        $("#navContactTab").attr('class', '');
+      }
+
+      function gotoContact() {
+        $("#home").hide()
+        $("#skills").hide()
+        $("#contact").slideDown()
+        $("#navHomeTab").attr('class', '');
+        $("#navSkillsTab").attr('class', '');
+        $("#navContactTab").attr('class', 'active');
+      }
+
+    </script>
+  </body>
+</html>
